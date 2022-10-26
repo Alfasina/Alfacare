@@ -1,13 +1,15 @@
 .navbar-container{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(36, 0, 128, 0.7);
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    font-size: 1rem;
 }
 .lis{
     display: flex;
+    font-size: 1.4rem;
 }
 a{
     text-decoration: none;
@@ -41,13 +43,13 @@ li:active{
     }
     .navbar-container{
         flex-direction: column;
+        
     }
     .listContainer{
         overflow: hidden;
     }
     .nav-link:active{
-            border-left: green 1px solid;
-            
+            border-left: green 1px solid;      
     }
     
     .btn-Nav{

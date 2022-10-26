@@ -19,6 +19,7 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  color: green;
 }
 h3 {
   font-size: 1.25rem;
@@ -37,6 +38,7 @@ p {
   }
   h2 {
     font-size: 2.5rem;
+    
   }
   h3 {
     font-size: 1.75rem;
@@ -54,7 +56,7 @@ p {
     line-height: 1;
   }
   p{
-    font-size: 1rem;
+    font-size: .2rem;
   }
 }
 

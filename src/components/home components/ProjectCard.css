@@ -1,0 +1,27 @@
+.projCardDiv{
+    flex-basis: 22%;
+    min-width: 18%;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgba(36, 0, 128, 0.1);
+}
+.projcardContainer{
+    display: flex;
+    gap:1rem;
+    padding:2rem 3rem;
+    overflow-x: auto;
+}
+.projcardContainer::-webkit-scrollbar { display: none;}
+.progImage{
+    border-radius: 1.3rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+@media (max-width:787px){
+    .projCardDiv{
+        flex-basis: 56%;
+        min-width: 56%;
+
+    }
+}

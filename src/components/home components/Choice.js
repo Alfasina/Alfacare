@@ -25,7 +25,7 @@ const Choice = () => {
     {icon:<SiRoamresearch/>, heading:'RESEARCH AND TRAINING',paragraph:' is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'}]
   return (
     <>
-      <h3 ref={innerRef}>Our Capacities{isVisible ? 'visible':'not Visible'}</h3>
+      <h2 ref={innerRef}>OUR CAPACITIES{/* isVisible ? 'visible':'not Visible' */}</h2>
       <p>lhygvysbvailu uidbavoyif ugafyiuiu idsiupavcu; nio[afsviu b;uDGIU;;hwfavsyg jasbfpyibvu;q</p>
       <div className='choiceCardDiv' >
         {capacities.map((capacity,index)=><ChoiceCard key={index} {...capacity}/>)}

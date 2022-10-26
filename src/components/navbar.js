@@ -1,8 +1,8 @@
 import React, {useState, useEffect,useRef} from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
-import { FaBars} from 'react-icons/fa'
-import {MdClear} from 'react-icons/md'
+import { FaBars, FaTimes} from 'react-icons/fa'
+
 
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
     <h4>
 <img src='#' alt='logo' className='logoImg'/>Alfacare.Org</h4>
 
-<button className='btn-Nav ' onClick={toogleFunction}>{!toogle ? <FaBars/>:<MdClear/>}</button>
+<button className='btn-Nav ' onClick={toogleFunction}>{!toogle ? <FaBars/>:<FaTimes/>}</button>
 
 </div>
 

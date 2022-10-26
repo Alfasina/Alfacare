@@ -1,0 +1,57 @@
+.image{
+    box-shadow:  rgb(255, 255, 255) 12px -12px 0px -6px, rgb(31, 193, 27) 10px -10px;
+    border-radius: 50% 50% 0 0;
+    
+}
+.heroimageDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 4rem;
+}
+.image1{
+    box-shadow:  rgb(255, 255, 255) -12px 12px 0 -6px , rgb(31, 193, 27) -10px 10px;
+    border-radius: 0 0 50% 50%;
+}
+.imageDiv{
+    flex-basis: 29%;
+}
+.image1Div{
+    flex-basis: 33%;
+}
+.btn{
+    width:8rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin:  1rem;
+}
+.btn-empty, .btn-full:hover{
+    border: 1px green solid;
+    color: green;
+    background-color: white;
+}
+
+.btn-full, .btn-empty:hover{
+    border: 1px green solid;
+    color: white;
+    background-color: green;
+}
+
+@media (max-width:767px) {
+.imageDiv{
+    display: none;
+}   
+.image1Div{
+    flex-basis: 100%;
+    margin: 0;
+} 
+.heroimageDiv{
+    margin: .2rem;
+    padding: 2rem;
+}
+    
+}
+@media (max-width:767px) {
+    
+    
+}

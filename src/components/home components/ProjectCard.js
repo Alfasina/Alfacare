@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ProjectCard = ({image,description,id, title}) => {
-    console.log(image +id)
   return (
     <div className='projCardDiv'>
     

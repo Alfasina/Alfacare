@@ -41,11 +41,11 @@
 @media (min-width:767px) {
     .choiceCardDiv{
         gap: 1.5rem;
-        margin: 2rem;
+        margin: 2rem 5rem;
         justify-content: space-between;
     }
     .choiceCard{
-        flex-basis: 20%;
+        flex-basis: 18%;
     padding: 1rem 2rem;
     }
 }

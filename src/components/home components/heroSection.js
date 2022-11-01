@@ -10,6 +10,7 @@ const HeroSection = () => {
     <div style={{display:'flex',flexDirection:'column', justifyContent:'center', alignItems:'center'}} >
       <div style={{width:`50%`, borderBottom:'4rem'}}>
         <h2 >ALFACARE</h2>
+        <h3>Help & Care Organization</h3>
         <p>Alfacare is an independent, non-profit making. Non-government organisations (NGO) that is committed to the peaceful co-existence of the people of Nigeria.</p>
         </div>
        <div> <button className='btn btn-empty'>Our Activities</button>

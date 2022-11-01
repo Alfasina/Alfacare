@@ -32,10 +32,11 @@ const Home = () => {
       <div className='projcardContainer'>
         {imagediv.map((proj)=><ProjectCard key={proj.id} {...proj}/>)}
       </div>
-<div>
-</div>
     </div>
-      
+    <div>
+      <h2> Our Partners</h2>
+      <div></div>
+    </div>
     </>
   );
 }

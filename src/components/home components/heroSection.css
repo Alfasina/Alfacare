@@ -56,9 +56,14 @@
     box-shadow:  rgb(255, 255, 255) -12px 12px 0 -6px ,rgb(255, 255, 255) 12px -12px 0 -6px , rgb(59, 22, 224) -10px 10px,rgb(5, 76, 16) 10px -10px ;
     border-radius: 0 0 50% 50%;
 }
-    
+.heroText{
+    width: 80%;
 }
-@media (max-width:767px) {
+}
+@media (min-width:767px) {
+    .heroText{
+        width: 60%;
+    }
     
     
 }

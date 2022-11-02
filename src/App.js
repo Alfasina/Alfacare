@@ -4,6 +4,7 @@ import { BrowserRouter, Routes,Route,} from 'react-router-dom'
 import Home from './components/Home';
 import Error from './components/home components/Error';
 import ChoiceDetails from './components/home components/choiceDetails';
+import Footer from './components/Footer';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         </Routes>
         
       </section>
+      <Footer/>
     </div>
     </BrowserRouter>
   );

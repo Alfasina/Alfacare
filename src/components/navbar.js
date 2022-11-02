@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(()=>{
     const height=innerCon.current.getBoundingClientRect().height
     if(toogle){
-      outerCon.current.style.height=`${height}px`
+      outerCon.current.style.height=`${height+10}px`
     }
     else{
       outerCon.current.style.height='0px'
@@ -24,9 +24,9 @@ const Navbar = () => {
   
   return (
 <nav className='navbar-container'>
-<div className='logoContainer' style={{margin:'4px'}}>
+<div className='logoContainer' >
     <div style={{display:'flex'}}>
-<img src={logo} width='30px' alt='logo' className='logoImg'/><h3>Help & Care</h3>
+<img src={logo} width='30px' alt='logo' className='logoImg'/><h3 style={{textAlign:'left', color:'white',margin:'auto 3px'}}>HELP &<br/><span style={{textAlign:'left', color:'#14084c', lineHeight:'1.2rem'}}> CARE</span></h3>
 </div>
 
 <button className='btn-Nav ' onClick={toogleFunction}>{!toogle ? <FaBars/>:<FaTimes/>}</button>

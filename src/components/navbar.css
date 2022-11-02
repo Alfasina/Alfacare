@@ -4,7 +4,7 @@
     top: 0;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 97%;
     font-size: 1rem;
     padding: 4px 5%;
 }
@@ -16,7 +16,7 @@
 }
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(20, 8, 76);
 }
 a:visited{
     border-top:1px solid ;
@@ -29,16 +29,24 @@ li{
    }
    li:hover{
     border-radius: 2rem;
+    color: white;
     border-bottom:white solid 2px ;  
    }
 li:active{
-    border-bottom: solid green 1px;
+    border-bottom: solid rgb(20, 8, 76) 1px;
+    color: white;
 }
 .logoContainer{
     display: flex;
     justify-content: space-between;
 }
 @media (max-width:767px) {
+    .navbar-container{
+        width: 100%;
+    }
+    .logoContainer{
+        margin:4px
+    }
     .lis{
         flex-direction: column;
         text-align: left;
@@ -66,6 +74,7 @@ li:active{
             }
     .logoImg{
         width: 40px;
+        height: auto;
     }
     .navbar-container{
         padding:0;
@@ -77,6 +86,7 @@ li:active{
     }
     .logoImg{
         width: 90px;
+        height: auto;
     }
     .btn-Nav{
         display: none;

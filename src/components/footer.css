@@ -1,0 +1,42 @@
+.footer{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: blue;
+    padding: 4rem 0;
+}
+.footer div{
+    display: flex;
+    flex-direction: column;
+    border-left: solid rgb(113, 93, 209) 2px;
+    text-align: left;
+    padding:0 2rem;
+    gap:1rem;
+    height:auto;
+}
+@media (max-width:767px) {
+    .footer{
+        flex-direction: column;
+        background-color:blue;
+        overflow: hidden;
+        padding: 2rem;
+    }
+    .footer div{
+        
+        border-left: 2px solid rgb(110, 110, 226);
+        margin-bottom: 2rem;
+        padding: 1;
+        margin: 0;
+    }
+    .footer div a {
+        font-size: 12px;}
+        iframe{
+            width: 70%;
+        }
+}
+.footer div a {
+    color:rgb(110, 110, 226);
+    font-size: 15px;
+    line-height: 1.6em;
+    padding: 0;
+    margin-bottom: 11px;
+}

@@ -14,13 +14,12 @@ const imagediv=[{image:Almajiri, description:'mo]jfaijorajinaksniuornkdniuq', id
 {image:Alfa, description:'JhjoiAEFHIioh', id:5, title:'h GAEYUF  IHEfudaihi'},
 {image:Alfaa, description:'JhjoiAEFHIioh', id:6, title:'h GAEYUF  IHEfudaihi'},
 ]
-  
+
 const Home = () => {
-    
-  
+
   return (
     <>
-    <div className='firstDiv'>
+    <div >
     <HeroSection/>
     </div>
     <div>
@@ -29,7 +28,7 @@ const Home = () => {
     
     <div>
       <h2>OUR RECENT PROJECTS</h2>
-      <div className='projcardContainer'>
+      <div className='projcardContainer' >
         {imagediv.map((proj)=><ProjectCard key={proj.id} {...proj}/>)}
       </div>
     </div>

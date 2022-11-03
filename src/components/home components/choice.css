@@ -9,9 +9,12 @@
 .choiceCard:nth-child(odd){
     box-shadow: blue 0px 0px 15px;
 }
+
 .choiceCardDiv{
     display: flex;
+    box-sizing: border-box;
 }
+
 .iconDiv{
     background-color: green;
     padding: 1rem;
@@ -21,8 +24,13 @@
     justify-self: center;
     color: white;
 }
-.iconDiv:nth-of-type(even) {
-    background-color: lightyellow;
+h3{
+    color: black;
+}
+p{
+    color: green;
+    font-size: 16px;
+    line-height: 1.3em;
 }
 
 @media (max-width:767px) {
@@ -31,6 +39,9 @@
         padding: 2rem;
         gap: 2rem;
     }
+    p{
+        line-height: 1em;
+        font-size: 14px;}
     .choiceCard{
     padding: 2rem 2rem;
     

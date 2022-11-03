@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 
 const ChoiceCard = ({icon,heading, paragraph,id}) => {
   /* let navigate =useNavigate(); */
-  const short=paragraph.split(' ').slice(0, 30).join(' ')
+  //const short=paragraph.split(' ').slice(0, 30).join(' ')
   return (
     <div className='choiceCard' /* onClick={async(e)=>{
       let card=await createCard(e.target);
@@ -13,7 +13,7 @@ const ChoiceCard = ({icon,heading, paragraph,id}) => {
       <Link to={`capacities/${heading}`}>
         <div className='iconDiv'>{icon}</div>
         <h3>{heading}</h3>
-        <p>{short}</p>
+        <p>{paragraph}</p>
         </Link>
     </div>
   );

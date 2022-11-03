@@ -1,0 +1,24 @@
+@media (max-width:397px){
+    .aboutdiv{
+        padding: 0 2rem;
+        text-align: left;
+    }
+    .Aparagraph{
+        font-weight: 400;
+        text-align: justify;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:397px){
+    .aboutdiv{
+        padding: 0 12rem;
+    }
+    .Aparagraph{
+        font-weight: 400;
+        text-align: justify;
+        font-size:18px;
+        line-height: 1.8rem;
+    }
+
+}

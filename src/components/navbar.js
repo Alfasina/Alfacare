@@ -36,8 +36,8 @@ const Navbar = () => {
 <div className='listContainer' ref={outerCon}>
   <ul ref={innerCon} className='lis'>
     <li ><Link to='/' className='nav-link'> Home </Link></li>
-    <li ><Link to='/' className='nav-link'> Projects </Link></li>
-    <li ><Link to='/' className='nav-link'> About</Link></li>
+    <li ><Link to='/projects' className='nav-link'> Projects </Link></li>
+    <li ><Link to='/about' className='nav-link'> About</Link></li>
   </ul>
 </div>
 </nav>

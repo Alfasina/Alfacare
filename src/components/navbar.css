@@ -1,12 +1,11 @@
 .navbar-container{
-    background-color: rgba(10, 136, 66, 0.8);
-    position: fixed;
+    background-color: rgba(10, 136, 1);
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
-    width: 97%;
+    box-sizing: border-box;
     font-size: 1rem;
-    padding: 4px 5%;
 }
 
 
@@ -16,21 +15,22 @@
 }
 a{
     text-decoration: none;
-    color: rgb(20, 8, 76);
+    color: rgb(116, 233, 180);
+    font-size: 18px;
 }
 a:visited{
     border-top:1px solid ;
 }
 li{
     list-style-type: none;
-    color: aquamarine;
     margin:0 1rem;
     padding: .5rem;
    }
    li:hover{
     border-radius: 2rem;
     color: white;
-    border-bottom:white solid 2px ;  
+    border-bottom:rgb(116, 233, 180) solid 2px ; 
+    border-radius: none; 
    }
 li:active{
     border-bottom: solid rgb(20, 8, 76) 1px;
@@ -78,6 +78,9 @@ li:active{
     }
     .navbar-container{
         padding:0;
+    }
+    a{
+        font-size: 13px;
     }
 }
 @media (min-width:767px) {

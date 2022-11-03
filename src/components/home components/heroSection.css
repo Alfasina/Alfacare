@@ -28,10 +28,10 @@
 .btn-empty, .btn-full{
     color: white;
     border:none;
-    background-image: linear-gradient(to left, white, green);
+    background-image: linear-gradient(to left, blue, green);
 }
 .btn-full{
-    background-image:linear-gradient(to right,  white,blue);
+    background-image:linear-gradient(to left,  green,blue);
 }
 
 .btn-full:hover, .btn-empty:hover{
@@ -63,7 +63,5 @@
 @media (min-width:767px) {
     .heroText{
         width: 60%;
-    }
-    
-    
+    }    
 }

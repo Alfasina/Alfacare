@@ -4,7 +4,7 @@ import logo from '../../images/logo.png'
 
 const Error = () => {
   return (
-    <div>
+    <div className='firstDiv'>
       <img src={logo} alt='Alfacare logo sppinning' className='spinImg'/>
       <h4>Page Does Not Exist </h4>
      <Link to='/' ><button className='btn'> Back to HomePage</button></Link>

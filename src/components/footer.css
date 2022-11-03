@@ -1,8 +1,10 @@
 .footer{
+    box-sizing: border-box;
     display:flex;
     justify-content: space-evenly;
     background-color: blue;
     padding: 4rem 0;
+    box-sizing: border-box;
 }
 .footer div{
     display: flex;
@@ -34,7 +36,7 @@
         }
 }
 .footer div a {
-    color:rgb(110, 110, 226);
+    color:rgb(168, 168, 236);
     font-size: 15px;
     line-height: 1.6em;
     padding: 0;

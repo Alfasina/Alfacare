@@ -9,10 +9,9 @@
         font-size: 14px;
     }
 }
-
 @media (min-width:397px){
     .aboutdiv{
-        padding: 0 12rem;
+        padding: 0 .5rem;
     }
     .Aparagraph{
         font-weight: 400;

@@ -1,4 +1,4 @@
-import React ,{useState, useRef,useEffect}  from 'react';
+import React ,{useState,}  from 'react';
 
 import './choice.css'
 import ChoiceCard from './choiceCard';
@@ -10,24 +10,15 @@ export const capacities=[{icon:<GiPeaceDove/>, heading:'CONFLICT RESOLUTION',par
 {icon:<FaHandsHelping/>, heading:'EDUCATION',paragraph:'Building capacity of youth in area of peace and income generation activities for the sustenance of peace. Train and educate youth to become members of peace corps in their society.'},
 {icon:<SiRoamresearch/>, heading:'WORKSHOPS AND CAPACITY BUILDING',paragraph:'Alfa care shall be involved in organising peace inculcating workshops to targeted audience through which she will propagate peace. Alfa care would enhance capacities of youths both in management and technical skill, like income generating activities to keep them busy. '}]
 const Choice = () => {
-  const innerRef=useRef(null)
-  let options={threshold:1, }
-
-    useEffect(()=> {
-        
-        const observer= new IntersectionObserver((entries)=>{
-          
-          entries.map((entry)=>{console.log(entry.isIntersecting)})
-        },options)
-        observer.observe(innerRef.current)
-    },[options]) 
+  
+   
    
   return (
     <>
-      <h2 ref={innerRef}>OUR CAPACITIES{/* isVisible ? 'visible':'not Visible' */}</h2>
+      <h2 >OUR CAPACITIES</h2>
       <p>Our expertise and Experience across the years can be broadly classified uder the following capacities </p>
-      <div className='choiceCardDiv' >
-        {capacities.map((capacity,index)=><ChoiceCard key={index} {...capacity}/>)}
+      <div className='choiceCardDiv'  >
+        {capacities.map((capacity,index)=><ChoiceCard key={index} {...capacity} />)}
       </div>
     </>
   );

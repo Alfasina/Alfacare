@@ -1,6 +1,7 @@
 import React from 'react';
 import { Operations } from './aboutdata';
 import './about.css'
+import { Helmet } from 'react-helmet';
 
 
 
@@ -10,6 +11,10 @@ const Item=({id,desc,topic})=> {return (<><br/>{id}.<span style={{color:'black',
 const About = () => {
   return (
     <div className='aboutdiv'>
+      <Helmet>
+      <meta charSet="utf-8" />
+                <title>About| Alfacare</title>
+      </Helmet>
       <div style={{lineHeight:'1.6'}}>
         <h3 >INTRODUCTION</h3>
         <p className='Aparagraph'>Alfacare is an independent, non-profit making. Non-government organisations (NGO) that is committed to the peaceful co-existence of the people of Nigeria. The need for peace in any society can not be over emphasised. Meaningful progress can easily be achieved in an atmosphere of peace.

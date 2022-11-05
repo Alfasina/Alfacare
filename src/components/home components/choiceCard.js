@@ -1,13 +1,26 @@
-import React from 'react';
+import React,{useRef, useEffect} from 'react';
 
 const ChoiceCard = ({icon,heading, paragraph,id}) => {
-  /* let navigate =useNavigate(); */
-  //const short=paragraph.split(' ').slice(0, 30).join(' ')
+ 
+  const innerRef=useRef(null)
+  const options={threshold:0.25}
+  useEffect(()=> {
+      
+    const observer= new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('bounce')
+        }
+        else{
+          entry.target.classList.remove('bounce')
+        }
+      })
+      
+    },[options])
+    observer.observe(innerRef.current)
+}) 
   return (
-    <div className='choiceCard' /* onClick={async(e)=>{
-      let card=await createCard(e.target);
-      navigate(`/capacities/${card.paragraph}`)
-    }} */>
+    <div className='choiceCard' ref={innerRef}>
         <div className='iconDiv'>{icon}</div>
         <h3>{heading}</h3>
         <p>{paragraph}</p>
